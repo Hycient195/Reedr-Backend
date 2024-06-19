@@ -16,7 +16,8 @@ connectDB();
 // Init Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:3000",
+  // origin: "http://localhost:3000",
+  origin: [ "https://reedr.vercel.app", "http://localhost:3000", "https://reedr-git-master-hycient195s-projects.vercel.app", "https://reedr-5b2ti6ok1-hycient195s-projects.vercel.app" ],
   methods: [ "POST", "PUT", "GET", "PATCH" ],
   credentials: true
 }))
